@@ -1,0 +1,2 @@
+module Seungchan_JAVA {
+}
