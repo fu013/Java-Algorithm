@@ -19,14 +19,15 @@ public class ClassEx {
 	
 	static final int S1 = 0; // 정적 상수 필드
 
-	public A() { // 생성자
-		f1 = f2 = f3 = 0;
+	public ClassEx() { // 생성자
+		f1 = f2 = f3 = f4 = 0;
 	}
 	
-	public A(int f1, int f2, int f3) { // 생성자
+	public ClassEx(int f1, int f2, int f3, int f4) { // 생성자
 		this.f1 = f1;
 		this.f2 = f2;
 		this.f3 = f3;
+		this.f4 = f4;
 	}
 	
 	public void setF1(int f) { // 매서드 F1의 Setter
