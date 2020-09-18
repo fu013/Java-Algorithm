@@ -40,5 +40,4 @@ public class StraightInsertionSort {
 			System.out.println("x[" + i + "]=" + x[i]);
 		}
 	}
-
 }
