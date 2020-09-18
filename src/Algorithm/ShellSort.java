@@ -7,6 +7,7 @@ import java.util.Scanner;
 // 3. 모든 인덱스 요소끼리 비교하여 정렬(위에 과정을 마치고 나서 정렬하는것이므로 일반적으로 정렬하는것보다 더 빠르게 정렬됨)
 
 public class ShellSort {
+	
 	// 셸 정렬
 	static void shellSort(int[] a, int n) {
 		for (int h = n / 2; h > 0; h /= 2) { // h = h / 2
