@@ -12,10 +12,10 @@ public class StraightSelectionSort {
 	}
 	
 	// 단순 선택 정렬
-	static void selectionSort(int[] a, int n)
-		for (int i = 0; i < n -1; i++) {
-			int min = i;
-			for (int j = i + 1; j < n; j++) {
+	static void selectionSort(int[] a, int n) // Argument a: array's Name, n: array's Length
+		for (int i = 0; i < n -1; i++) { // 배열의 개수 - 1 만큼 도는 바깥 포문, Length: 즉, 3이면 2번돔(0, 1)
+			int min = i; // a[i], ..., a[n-1]에서 가장 작은 값을 가지는 요소의 인덱스
+			for (int j = i + 1; j < n; j++) { // n=3이고, j는 i=0일때, j =1, j < 3, j++; 1,2 배열의 개수 -1만큼 돔, 시작은 무조건 1부터
 				if (a[j] < a[min]) {
 					min = j;
 				}
