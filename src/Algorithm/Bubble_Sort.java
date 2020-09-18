@@ -13,7 +13,7 @@ public class Bubble_Sort {
 	
 	// 버블 정렬, 매개변수로 배열 명과, 배열 총개수를 받는다.
 	static void bubbleSort(int[] a, int n) {
-		for (int i = 0; i < n - 1; i++) { // 배열의 개수만큼 도는 바깥 포문, 3일때는 3번돔 0,1,2
+		for (int i = 0; i < n - 1; i++) { // 배열의 개수만큼 도는 바깥 포문, 3일때는 2번돔 0,1
 			for (int j = n - 1; j > i; j--) { // n=3 일때 j=2, 2 > 0, 즉 2번돔
 				// i = 0일때, j=2, x[1]과 x[2] 비교
 				// 즉 처음 i = 0일때, j=1, x[0]과 x[1] 비교
@@ -21,7 +21,7 @@ public class Bubble_Sort {
 				// i = 1일때, j > 1 고, j = 2이므로
 				// x[1] x[2] 한번더 비교
 				
-				// i = 2 일때 j = 2 이므로 돌지 않음
+				// i = 2 일때는 n-1값과 같으므로 돌지 않음
 				// 이리하여 모든 경우의 수를 비교하고 왼쪽으로 작은순으로 출력함
 				
 				if(a[j-1] > a[j]) { // x[1] > x[2] 이라면 
@@ -51,7 +51,7 @@ public class Bubble_Sort {
 		
 		bubbleSort(x, nx); // 배열 x를 버블 정렬합니다. 배열 이름, 배열 개수
 		
-		System.out.println("오름차순으로 정렬했습니다.");
+		System.out.println("오름차순으로 버블 방식으로 정렬했습니다.");
 		for (int i = 0; i < nx; i++) {
 			System.out.println("x[" + i + "]=" + x[i]);
 		}
